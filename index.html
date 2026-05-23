@@ -304,6 +304,76 @@
             .nav { justify-content: flex-start; }
             .how-to-use { padding: 24px 18px; }
         }
+
+        /* House images */
+        .house-image {
+            width: 100%;
+            border-radius: 10px 10px 0 0;
+            margin: -28px -28px 20px -28px;
+            width: calc(100% + 56px);
+            max-height: 500px;
+            object-fit: cover;
+            display: block;
+        }
+        .house-card:has(.house-image) {
+            padding-top: 0;
+        }
+        .house-image-container {
+            margin: -28px -28px 20px -28px;
+            overflow: hidden;
+            border-radius: 10px 10px 0 0;
+            position: relative;
+            max-height: 500px;
+        }
+        .house-image-container img {
+            width: 100%;
+            height: auto;
+            max-height: 500px;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.5s ease;
+        }
+        .house-card:hover .house-image-container img {
+            transform: scale(1.02);
+        }
+        .image-credit {
+            position: absolute;
+            bottom: 8px;
+            right: 12px;
+            font-size: 0.65rem;
+            color: rgba(255,255,255,0.7);
+            background: rgba(0,0,0,0.4);
+            padding: 2px 8px;
+            border-radius: 8px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        }
+        .photo-link-bar {
+            background: linear-gradient(135deg, var(--stone-lightest), var(--wood-pale));
+            border-radius: 10px 10px 0 0;
+            margin: -28px -28px 20px -28px;
+            padding: 40px 28px;
+            text-align: center;
+            border-bottom: 1px solid var(--border);
+        }
+        .photo-link-bar a {
+            display: inline-block;
+            background: var(--wood);
+            color: #fff;
+            text-decoration: none;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            font-size: 0.82rem;
+            transition: background 0.2s;
+        }
+        .photo-link-bar a:hover { background: var(--wood-light); }
+        .north-star .house-image-container { margin: -28px -28px 20px -28px; border-radius: 10px 10px 0 0; }
+        .north-star .photo-link-bar { margin: -28px -28px 20px -28px; }
+        @media (max-width: 768px) {
+            .house-image-container { margin: -22px -18px 16px -18px; border-radius: 10px 10px 0 0; }
+            .photo-link-bar { margin: -22px -18px 16px -18px; padding: 30px 18px; }
+            .house-card:has(.house-image) { padding-top: 0; }
+        }
     </style>
 </head>
 <body>
@@ -362,6 +432,10 @@
 </div>
 
 <div class="house-card north-star">
+    <div class="house-image-container">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Fallingwater3.jpg/1280px-Fallingwater3.jpg" alt="Fallingwater by Frank Lloyd Wright — cantilevered terraces over Bear Run waterfall, built from native sandstone" loading="lazy">
+        <span class="image-credit">Wikimedia Commons, CC</span>
+    </div>
     <div class="card-header"><div><h4>1. Fallingwater</h4><span class="formal-name">Edgar J. Kaufmann Sr. Residence</span></div></div>
     <div class="card-meta">
         <span><span class="icon">📍</span> Mill Run, Pennsylvania</span>
@@ -384,6 +458,10 @@
 </div>
 
 <div class="house-card">
+    <div class="house-image-container">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Kentuck_Knob_20190516_%2824%29_-_%22Courtyard-Carport%22.jpg/1280px-Kentuck_Knob_20190516_%2824%29_-_%22Courtyard-Carport%22.jpg" alt="Kentuck Knob by Frank Lloyd Wright — Usonian house with tidewater red cypress and native sandstone" loading="lazy">
+        <span class="image-credit">Wikimedia Commons, CC</span>
+    </div>
     <div class="card-header"><div><h4>2. Kentuck Knob</h4><span class="formal-name">I.N. Hagan House</span></div></div>
     <div class="card-meta">
         <span><span class="icon">📍</span> Chalk Hill, Pennsylvania</span><span><span class="icon">📅</span> 1956</span>
@@ -403,6 +481,10 @@
 </div>
 
 <div class="house-card">
+    <div class="house-image-container">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Taliesin_West_Complex_DSCN2137.jpg/1280px-Taliesin_West_Complex_DSCN2137.jpg" alt="Taliesin West — Frank Lloyd Wright's desert masonry of volcanic rocks set in concrete" loading="lazy">
+        <span class="image-credit">Wikimedia Commons, CC</span>
+    </div>
     <div class="card-header"><div><h4>3. Taliesin West</h4><span class="formal-name">Winter Home &amp; Studio</span></div></div>
     <div class="card-meta">
         <span><span class="icon">📍</span> Scottsdale, Arizona</span><span><span class="icon">📅</span> 1937</span>
@@ -422,6 +504,10 @@
 </div>
 
 <div class="house-card">
+    <div class="house-image-container">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Seth_Peterson_Cottage_Exterior.jpg/1280px-Seth_Peterson_Cottage_Exterior.jpg" alt="Seth Peterson Cottage — Wright's smallest commission with a massive sandstone fireplace" loading="lazy">
+        <span class="image-credit">Wikimedia Commons, CC</span>
+    </div>
     <div class="card-header"><div><h4>4. Seth Peterson Cottage</h4></div></div>
     <div class="card-meta">
         <span><span class="icon">📍</span> Lake Delton, Wisconsin</span><span><span class="icon">📅</span> 1958</span>
@@ -447,6 +533,10 @@
 </div>
 
 <div class="house-card">
+    <div class="house-image-container">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Kaufman_Desert_Home.jpg/1280px-Kaufman_Desert_Home.jpg" alt="Kaufmann Desert House by Richard Neutra — Utah buff sandstone anchoring steel and glass in the Palm Springs desert" loading="lazy">
+        <span class="image-credit">Wikimedia Commons, CC</span>
+    </div>
     <div class="card-header"><div><h4>5. Kaufmann Desert House</h4></div></div>
     <div class="card-meta">
         <span><span class="icon">📍</span> Palm Springs, California</span><span><span class="icon">📅</span> 1946</span>
@@ -472,6 +562,10 @@
 </div>
 
 <div class="house-card">
+    <div class="house-image-container">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/4Y1A7841_Alvar_Aalto%2C_Finland_%2826710745140%29.jpg/1280px-4Y1A7841_Alvar_Aalto%2C_Finland_%2826710745140%29.jpg" alt="Villa Mairea by Alvar Aalto — pine, birch, teak, brick, and natural stone in Noormarkku, Finland" loading="lazy">
+        <span class="image-credit">Wikimedia Commons, CC</span>
+    </div>
     <div class="card-header"><div><h4>6. Villa Mairea</h4></div></div>
     <div class="card-meta">
         <span><span class="icon">📍</span> Noormarkku, Finland</span><span><span class="icon">📅</span> 1939</span>
@@ -491,6 +585,10 @@
 </div>
 
 <div class="house-card">
+    <div class="house-image-container">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Inner_court_Muuratsalo_Experimental_House.jpg/1280px-Inner_court_Muuratsalo_Experimental_House.jpg" alt="Muuratsalo Experimental House courtyard — Aalto's material laboratory with 50+ types of brick and tile" loading="lazy">
+        <span class="image-credit">Wikimedia Commons, CC</span>
+    </div>
     <div class="card-header"><div><h4>7. Muuratsalo Experimental House</h4></div></div>
     <div class="card-meta">
         <span><span class="icon">📍</span> Muuratsalo Island, Finland</span><span><span class="icon">📅</span> 1953</span>
@@ -514,6 +612,10 @@
 </div>
 
 <div class="house-card hungarian">
+    <div class="house-image-container">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/1e/NewCanaanCT_MarcelBreuerHouseII.jpg" alt="Breuer House II in New Canaan — fieldstone base with cantilevered wood upper level by Hungarian-born Marcel Breuer" loading="lazy">
+        <span class="image-credit">Wikimedia Commons, CC</span>
+    </div>
     <div class="card-header"><div><h4>8. Breuer House II</h4><span class="formal-name">Own family home</span></div></div>
     <div class="card-meta">
         <span><span class="icon">📍</span> New Canaan, Connecticut</span><span><span class="icon">📅</span> 1948</span>
@@ -532,6 +634,9 @@
 </div>
 
 <div class="house-card hungarian">
+    <div class="photo-link-bar">
+        <a href="https://www.google.com/search?q=Breuer+Stillman+House+Litchfield+Connecticut&tbm=isch" target="_blank" rel="noopener">📷 View Photos of Stillman House I — Breuer's finest residential work →</a>
+    </div>
     <div class="card-header"><div><h4>9. Stillman House I</h4></div></div>
     <div class="card-meta">
         <span><span class="icon">📍</span> Litchfield, Connecticut</span><span><span class="icon">📅</span> 1951</span>
@@ -550,6 +655,9 @@
 </div>
 
 <div class="house-card hungarian">
+    <div class="photo-link-bar">
+        <a href="https://www.google.com/search?q=Breuer+Gagarin+House+Litchfield&tbm=isch" target="_blank" rel="noopener">📷 View Photos of Gagarin House I — monumental fieldstone chimney →</a>
+    </div>
     <div class="card-header"><div><h4>10. Gagarin House I</h4></div></div>
     <div class="card-meta">
         <span><span class="icon">📍</span> Litchfield, Connecticut</span><span><span class="icon">📅</span> 1957</span>
@@ -574,6 +682,10 @@
 </div>
 
 <div class="house-card">
+    <div class="house-image-container">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/27/Miller_House_in_Columbus.jpg" alt="Miller House by Eero Saarinen — marble, slate, walnut, and the legendary sunken conversation pit" loading="lazy">
+        <span class="image-credit">Wikimedia Commons, CC</span>
+    </div>
     <div class="card-header"><div><h4>11. Miller House</h4><span class="formal-name">Eero Saarinen · Alexander Girard · Dan Kiley</span></div></div>
     <div class="card-meta">
         <span><span class="icon">📍</span> Columbus, Indiana</span><span><span class="icon">📅</span> 1957</span>
@@ -591,6 +703,10 @@
 </div>
 
 <div class="house-card">
+    <div class="house-image-container">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Cranbrook_Art_Museum_-_Bloomfield_Hills_%2851362574052%29.jpg/1280px-Cranbrook_Art_Museum_-_Bloomfield_Hills_%2851362574052%29.jpg" alt="Cranbrook campus by Eliel Saarinen — Arts & Crafts warmth meets Nordic modernism in Bloomfield Hills" loading="lazy">
+        <span class="image-credit">Wikimedia Commons, CC</span>
+    </div>
     <div class="card-header"><div><h4>12. Saarinen House (Cranbrook)</h4><span class="formal-name">Eliel &amp; Loja Saarinen</span></div></div>
     <div class="card-meta">
         <span><span class="icon">📍</span> Bloomfield Hills, Michigan</span><span><span class="icon">📅</span> 1930</span>
@@ -614,6 +730,10 @@
 </div>
 
 <div class="house-card">
+    <div class="house-image-container">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/USA_CA_Sheats-Goldstein_08.jpg/1280px-USA_CA_Sheats-Goldstein_08.jpg" alt="Sheats-Goldstein Residence by John Lautner — concrete cave with boulders protruding through floor and walls" loading="lazy">
+        <span class="image-credit">Wikimedia Commons, CC</span>
+    </div>
     <div class="card-header"><div><h4>13. Sheats–Goldstein Residence</h4></div></div>
     <div class="card-meta">
         <span><span class="icon">📍</span> Los Angeles, California</span><span><span class="icon">📅</span> 1963</span>
@@ -637,6 +757,10 @@
 </div>
 
 <div class="house-card">
+    <div class="house-image-container">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Sea_Ranch%2C_California_is_noted_for_its_distinctive_architecture_LCCN2013634745.tif/lossy-page1-1280px-Sea_Ranch%2C_California_is_noted_for_its_distinctive_architecture_LCCN2013634745.tif.jpg" alt="The Sea Ranch by MLTW — rough-sawn redwood weathering to silver-grey on the Sonoma Coast" loading="lazy">
+        <span class="image-credit">Library of Congress, Public Domain</span>
+    </div>
     <div class="card-header"><div><h4>14. The Sea Ranch</h4><span class="formal-name">Condominium One</span></div></div>
     <div class="card-meta">
         <span><span class="icon">📍</span> Sonoma County, California</span><span><span class="icon">📅</span> 1965</span>
@@ -660,6 +784,9 @@
 </div>
 
 <div class="house-card">
+    <div class="photo-link-bar">
+        <a href="https://nakashimawoodworkers.com" target="_blank" rel="noopener">📷 View Photos of Nakashima Compound — 21 structures over 28 years →</a>
+    </div>
     <div class="card-header"><div><h4>15. Nakashima Compound</h4></div></div>
     <div class="card-meta">
         <span><span class="icon">📍</span> New Hope, Pennsylvania</span><span><span class="icon">📅</span> 1946–1974</span>
@@ -685,6 +812,10 @@
 </div>
 
 <div class="house-card">
+    <div class="house-image-container">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Albert_Frey_House_%28Palm_Springs%2C_California%29.jpg/1280px-Albert_Frey_House_%28Palm_Springs%2C_California%29.jpg" alt="Frey House II — a desert boulder pushes through the bedroom wall in this 800 sq ft Palm Springs home" loading="lazy">
+        <span class="image-credit">Wikimedia Commons, CC</span>
+    </div>
     <div class="card-header"><div><h4>16. Frey House II</h4></div></div>
     <div class="card-meta">
         <span><span class="icon">📍</span> Palm Springs, California</span><span><span class="icon">📅</span> 1964</span>
@@ -719,6 +850,9 @@
 </div>
 
 <div class="house-card contemporary-card">
+    <div class="photo-link-bar">
+        <a href="https://www.google.com/search?q=Glenn+Murcutt+Simpson-Lee+House&tbm=isch" target="_blank" rel="noopener">📷 View Photos of Simpson-Lee House by Glenn Murcutt →</a>
+    </div>
     <div class="card-header"><div><h4>17. Simpson-Lee House</h4></div></div>
     <div class="card-meta">
         <span><span class="icon">📍</span> Mount Wilson, NSW, Australia</span><span><span class="icon">📅</span> 1994</span>
@@ -742,6 +876,10 @@
 </div>
 
 <div class="house-card contemporary-card">
+    <div class="house-image-container">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/2005-08-06-Therme-Vals-Peter-Zumthor_05.jpg/1280px-2005-08-06-Therme-Vals-Peter-Zumthor_05.jpg" alt="Therme Vals by Peter Zumthor — the master of materials. Stone and light in the Swiss Alps" loading="lazy">
+        <span class="image-credit">Wikimedia Commons, CC</span>
+    </div>
     <div class="card-header"><div><h4>18. Zumthor's Own Home</h4></div></div>
     <div class="card-meta">
         <span><span class="icon">📍</span> Haldenstein, Switzerland</span><span><span class="icon">📅</span> 2005</span>
@@ -759,6 +897,9 @@
 </div>
 
 <div class="house-card contemporary-card">
+    <div class="photo-link-bar">
+        <a href="https://www.zfrh.ch" target="_blank" rel="noopener">📷 View Photos of Zumthor Vacation Houses, Leis →</a>
+    </div>
     <div class="card-header"><div><h4>19. Vacation Houses, Leis</h4></div></div>
     <div class="card-meta">
         <span><span class="icon">📍</span> Vals, Graubünden, Switzerland</span><span><span class="icon">📅</span> 2009</span>
@@ -783,6 +924,9 @@
 </div>
 
 <div class="house-card contemporary-card">
+    <div class="photo-link-bar">
+        <a href="https://olsonkundig.com/projects/the-pierre/" target="_blank" rel="noopener">📷 View Photos of The Pierre by Olson Kundig — house nestled into rock →</a>
+    </div>
     <div class="card-header"><div><h4>20. The Pierre</h4></div></div>
     <div class="card-meta">
         <span><span class="icon">📍</span> San Juan Island, Washington</span><span><span class="icon">📅</span> 2010</span>
@@ -807,6 +951,9 @@
 </div>
 
 <div class="house-card contemporary-card">
+    <div class="photo-link-bar">
+        <a href="https://www.archdaily.com/search/projects?q=mk27%20catucaba" target="_blank" rel="noopener">📷 View Photos of Catuçaba Farm by Studio MK27 →</a>
+    </div>
     <div class="card-header"><div><h4>21. Catuçaba Farm</h4></div></div>
     <div class="card-meta">
         <span><span class="icon">📍</span> Catuçaba, São Paulo, Brazil</span><span><span class="icon">📅</span> 2016</span>
@@ -830,6 +977,9 @@
 </div>
 
 <div class="house-card contemporary-card">
+    <div class="photo-link-bar">
+        <a href="https://normcph.com/residential/archipelago-house/" target="_blank" rel="noopener">📷 View Photos of Archipelago House by Norm Architects →</a>
+    </div>
     <div class="card-header"><div><h4>22. Archipelago House</h4></div></div>
     <div class="card-meta">
         <span><span class="icon">📍</span> Swedish Coast</span><span><span class="icon">📅</span> 2020</span>
@@ -853,6 +1003,9 @@
 </div>
 
 <div class="house-card contemporary-card">
+    <div class="photo-link-bar">
+        <a href="https://www.google.com/search?q=Kengo+Kuma+Suteki+House+Portland&tbm=isch" target="_blank" rel="noopener">📷 View Photos of Suteki House by Kengo Kuma →</a>
+    </div>
     <div class="card-header"><div><h4>23. Suteki House</h4></div></div>
     <div class="card-meta">
         <span><span class="icon">📍</span> Portland, Oregon</span><span><span class="icon">📅</span> 2023</span>
@@ -870,6 +1023,9 @@
 </div>
 
 <div class="house-card contemporary-card">
+    <div class="photo-link-bar">
+        <a href="https://www.google.com/search?q=Kengo+Kuma+Haus+Balma+Vals&tbm=isch" target="_blank" rel="noopener">📷 View Photos of Haus Balma by Kengo Kuma →</a>
+    </div>
     <div class="card-header"><div><h4>25. Haus Balma</h4></div></div>
     <div class="card-meta">
         <span><span class="icon">📍</span> Vals, Graubünden, Switzerland</span><span><span class="icon">📅</span> 2022</span>
@@ -893,6 +1049,9 @@
 </div>
 
 <div class="house-card contemporary-card">
+    <div class="photo-link-bar">
+        <a href="https://www.johnpawson.com/works/home-farm" target="_blank" rel="noopener">📷 View Photos of Home Farm by John Pawson →</a>
+    </div>
     <div class="card-header"><div><h4>24. Home Farm</h4></div></div>
     <div class="card-meta">
         <span><span class="icon">📍</span> Cotswolds, England</span><span><span class="icon">📅</span> 2019</span>
@@ -916,6 +1075,10 @@
 </div>
 
 <div class="house-card hungarian">
+    <div class="house-image-container">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Imre_makovecz_faluhaz_kakasd.jpg/1280px-Imre_makovecz_faluhaz_kakasd.jpg" alt="Makovecz organic architecture — timber ribbed structure inspired by Hungarian folk craft (Kakasd Village Hall shown)" loading="lazy">
+        <span class="image-credit">Wikimedia Commons, CC</span>
+    </div>
     <div class="card-header"><div><h4>26. Farkasrét Mortuary Chapel</h4><span class="formal-name">Imre Makovecz</span></div></div>
     <div class="card-meta">
         <span><span class="icon">📍</span> Budapest XII. district</span><span><span class="icon">📅</span> 1977</span>
@@ -934,6 +1097,9 @@
 </div>
 
 <div class="house-card hungarian">
+    <div class="photo-link-bar">
+        <a href="https://www.google.com/search?q=wooden+house+algy%C5%91+hungary+architecture&tbm=isch" target="_blank" rel="noopener">📷 View Photos of Wooden House, Algyő →</a>
+    </div>
     <div class="card-header"><div><h4>27. Wooden House, Algyő</h4><span class="formal-name">Varsányi · Pozsár · Vas</span></div></div>
     <div class="card-meta">
         <span><span class="icon">📍</span> Algyő, Hungary</span><span><span class="icon">📅</span> 2016</span>
@@ -963,6 +1129,10 @@
 </div>
 
 <div class="house-card bauhaus-card">
+    <div class="house-image-container">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Napraforg%C3%B3_utca._Fortepan_87659.jpg/1280px-Napraforg%C3%B3_utca._Fortepan_87659.jpg" alt="Napraforgó Street housing estate — Budapest's own Weissenhof, 22 Bauhaus houses from 1931 (historic Fortepan photo)" loading="lazy">
+        <span class="image-credit">Fortepan / Wikimedia Commons, CC</span>
+    </div>
     <div class="card-header"><div><h4>28. Napraforgó Street Houses</h4><span class="formal-name">Budapest's Weissenhof Estate</span></div></div>
     <div class="card-meta">
         <span><span class="icon">📍</span> Budapest II. (Pasarét)</span><span><span class="icon">📅</span> 1931</span>
@@ -981,6 +1151,10 @@
 </div>
 
 <div class="house-card bauhaus-card">
+    <div class="house-image-container">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Walter_rozsi_villa_kertbol.jpg/1280px-Walter_rozsi_villa_kertbol.jpg" alt="Walter Rózsi Villa by József Fischer — one of Budapest's finest modernist houses, now housing the Museum of Architecture" loading="lazy">
+        <span class="image-credit">Wikimedia Commons, CC</span>
+    </div>
     <div class="card-header"><div><h4>29. Walter Rózsi Villa</h4><span class="formal-name">József Fischer</span></div></div>
     <div class="card-meta">
         <span><span class="icon">📍</span> Budapest XI. district</span><span><span class="icon">📅</span> 1936</span>
@@ -999,6 +1173,9 @@
 </div>
 
 <div class="house-card bauhaus-card">
+    <div class="photo-link-bar">
+        <a href="https://www.google.com/search?q=Sarolta+Huttl+Budapest+Bauhaus+apartment+renovation&tbm=isch" target="_blank" rel="noopener">📷 View Photos of Sarolta Huttl — Budapest Bauhaus renovation →</a>
+    </div>
     <div class="card-header"><div><h4>30. Sarolta Huttl — Bauhaus Apartment</h4><span class="formal-name">Budapest Bauhaus Villa Renovation</span></div></div>
     <div class="card-meta">
         <span><span class="icon">📍</span> Budapest</span><span><span class="icon">📅</span> 2016 renovation</span>
@@ -1017,6 +1194,9 @@
 </div>
 
 <div class="house-card bauhaus-card">
+    <div class="photo-link-bar">
+        <a href="https://www.google.com/search?q=B-Architecten+1930s+Belgian+modernist+house+travertine&tbm=isch" target="_blank" rel="noopener">📷 View Photos of B-Architecten Belgian 1930s house renovation →</a>
+    </div>
     <div class="card-header"><div><h4>31. B-Architecten — 1930s Belgian House</h4></div></div>
     <div class="card-meta">
         <span><span class="icon">📍</span> Belgium</span><span><span class="icon">📅</span> ~2020 renovation</span>
@@ -1034,6 +1214,9 @@
 </div>
 
 <div class="house-card bauhaus-card">
+    <div class="photo-link-bar">
+        <a href="https://www.google.com/search?q=Villa+Rezek+Vienna+Hans+Glas+restored&tbm=isch" target="_blank" rel="noopener">📷 View Photos of Villa Rezek, Vienna — restored 2022 →</a>
+    </div>
     <div class="card-header"><div><h4>32. Villa Rezek</h4><span class="formal-name">Hans Glas (restored Maximilian Eisenköck)</span></div></div>
     <div class="card-meta">
         <span><span class="icon">📍</span> Vienna, Austria</span><span><span class="icon">📅</span> 1933 (restored 2022)</span>

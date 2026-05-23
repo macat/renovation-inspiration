@@ -59,6 +59,9 @@
 ## Frank Lloyd Wright
 
 ### 1. Fallingwater
+
+![Fallingwater by Frank Lloyd Wright](https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Fallingwater3.jpg/800px-Fallingwater3.jpg)
+
 **Edgar J. Kaufmann Sr. Residence** · Mill Run, Pennsylvania · 1939
 
 - **Architect:** Frank Lloyd Wright
@@ -68,6 +71,9 @@
 - **Visit:** [fallingwater.org](https://fallingwater.org)
 
 ### 2. Kentuck Knob
+
+![Kentuck Knob by Frank Lloyd Wright](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Kentuck_Knob_20190516_%2824%29_-_%22Courtyard-Carport%22.jpg/800px-Kentuck_Knob_20190516_%2824%29_-_%22Courtyard-Carport%22.jpg)
+
 **I.N. Hagan House** · Chalk Hill, Pennsylvania · 1956
 
 - **Architect:** Frank Lloyd Wright
@@ -77,6 +83,9 @@
 - **Visit:** [kentuckknob.com](https://kentuckknob.com)
 
 ### 3. Taliesin West
+
+![Taliesin West desert masonry](https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Taliesin_West_Complex_DSCN2137.jpg/800px-Taliesin_West_Complex_DSCN2137.jpg)
+
 **Frank Lloyd Wright's Winter Home & Studio** · Scottsdale, Arizona · 1937
 
 - **Architect:** Frank Lloyd Wright
@@ -86,6 +95,9 @@
 - **Visit:** [franklloydwright.org](https://franklloydwright.org)
 
 ### 4. Seth Peterson Cottage
+
+![Seth Peterson Cottage exterior](https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Seth_Peterson_Cottage_Exterior.jpg/800px-Seth_Peterson_Cottage_Exterior.jpg)
+
 **Lake Delton, Wisconsin** · 1958
 
 - **Architect:** Frank Lloyd Wright
@@ -99,6 +111,9 @@
 ## Richard Neutra
 
 ### 5. Kaufmann Desert House
+
+![Kaufmann Desert House by Richard Neutra](https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Kaufman_Desert_Home.jpg/800px-Kaufman_Desert_Home.jpg)
+
 **Palm Springs, California** · 1946
 
 - **Architect:** Richard Neutra
@@ -111,6 +126,9 @@
 ## Alvar Aalto
 
 ### 6. Villa Mairea
+
+![Villa Mairea by Alvar Aalto](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/4Y1A7841_Alvar_Aalto%2C_Finland_%2826710745140%29.jpg/800px-4Y1A7841_Alvar_Aalto%2C_Finland_%2826710745140%29.jpg)
+
 **Noormarkku, Finland** · 1939
 
 - **Architect:** Alvar Aalto (with Aino Aalto)
@@ -120,6 +138,9 @@
 - **Visit:** [villamairea.fi](https://villamairea.fi)
 
 ### 7. Muuratsalo Experimental House
+
+![Muuratsalo Experimental House courtyard](https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Inner_court_Muuratsalo_Experimental_House.jpg/800px-Inner_court_Muuratsalo_Experimental_House.jpg)
+
 **Muuratsalo Island, Finland** · 1953
 
 - **Architect:** Alvar Aalto
@@ -133,6 +154,9 @@
 *Born in Pécs, 1902. Studied at the Bauhaus. Designed the Wassily Chair at 23. Emigrated to the US, where he built some of the finest stone-and-wood houses in New England.*
 
 ### 8. Breuer House II
+
+![Breuer House II in New Canaan](https://upload.wikimedia.org/wikipedia/commons/1/1e/NewCanaanCT_MarcelBreuerHouseII.jpg)
+
 **New Canaan, Connecticut** · 1948
 
 - **Architect:** Marcel Breuer
@@ -161,6 +185,9 @@
 ## Eero & Eliel Saarinen
 
 ### 11. Miller House
+
+![Miller House by Eero Saarinen](https://upload.wikimedia.org/wikipedia/commons/2/27/Miller_House_in_Columbus.jpg)
+
 **Columbus, Indiana** · 1957
 
 - **Architect:** Eero Saarinen (interiors: Alexander Girard, landscape: Dan Kiley)
@@ -169,6 +196,9 @@
 - **Renovation takeaway:** The conversation pit — a warm, lowered center where people gather around fire. Girard's collections approach (open shelving with curated objects) is perfect for a home valuing character over minimalism.
 
 ### 12. Saarinen House (Cranbrook)
+
+![Cranbrook campus by Eliel Saarinen](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Cranbrook_Art_Museum_-_Bloomfield_Hills_%2851362574052%29.jpg/800px-Cranbrook_Art_Museum_-_Bloomfield_Hills_%2851362574052%29.jpg)
+
 **Bloomfield Hills, Michigan** · 1930
 
 - **Architect:** Eliel Saarinen (with Loja Saarinen)
@@ -182,6 +212,9 @@
 ## John Lautner
 
 ### 13. Sheats–Goldstein Residence
+
+![Sheats-Goldstein Residence by John Lautner](https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/USA_CA_Sheats-Goldstein_08.jpg/800px-USA_CA_Sheats-Goldstein_08.jpg)
+
 **Los Angeles, California** · 1963
 
 - **Architect:** John Lautner
@@ -194,6 +227,9 @@
 ## MLTW / Charles Moore
 
 ### 14. The Sea Ranch (Condominium One)
+
+![The Sea Ranch by MLTW](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Sea_Ranch%2C_California_is_noted_for_its_distinctive_architecture_LCCN2013634745.tif/lossy-page1-800px-Sea_Ranch%2C_California_is_noted_for_its_distinctive_architecture_LCCN2013634745.tif.jpg)
+
 **Sonoma County, California** · 1965
 
 - **Architect:** MLTW (Moore, Lyndon, Turnbull, Whitaker)
@@ -219,6 +255,9 @@
 ## Albert Frey
 
 ### 16. Frey House II
+
+![Frey House II Palm Springs](https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Albert_Frey_House_%28Palm_Springs%2C_California%29.jpg/800px-Albert_Frey_House_%28Palm_Springs%2C_California%29.jpg)
+
 **Palm Springs, California** · 1964
 
 - **Architect:** Albert Frey
@@ -362,6 +401,9 @@
 ---
 
 ### 28. Napraforgó Street Houses
+
+![Napraforgó Street housing estate, Budapest](https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Napraforg%C3%B3_utca._Fortepan_87659.jpg/800px-Napraforg%C3%B3_utca._Fortepan_87659.jpg)
+
 **Budapest II. district (Pasarét)** · 1931
 
 - **Architects:** 22 houses by 28 different architects
@@ -371,6 +413,9 @@
 - **Visit:** Napraforgó utca, Budapest II. Walk the whole street.
 
 ### 29. Walter Rózsi Villa
+
+![Walter Rózsi Villa, Budapest](https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Walter_rozsi_villa_kertbol.jpg/800px-Walter_rozsi_villa_kertbol.jpg)
+
 **Budapest XI. district** · 1936
 
 - **Architect:** József Fischer
