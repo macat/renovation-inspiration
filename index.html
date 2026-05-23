@@ -1,0 +1,1221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budapest Renovation Inspiration — Wood, Stone & Natural Materials</title>
+    <meta name="description" content="30+ houses where architects used wood, stone, and natural materials. Three chapters: Classic Mid-Century, Contemporary with Mid-Century DNA, and Bauhaus + Natural Materials. Curated for a Budapest house renovation.">
+    <style>
+        :root {
+            --stone: #8B7D6B;
+            --stone-light: #C4B9A8;
+            --stone-lighter: #E8E0D4;
+            --stone-lightest: #F5F1EB;
+            --wood: #6B4226;
+            --wood-light: #A0714F;
+            --wood-warm: #D4A574;
+            --wood-pale: #F0E0CC;
+            --forest: #2D4A2D;
+            --forest-light: #4A7A4A;
+            --water: #4A6B8A;
+            --bauhaus-red: #C13B2A;
+            --bauhaus-blue: #2A5BA3;
+            --bauhaus-yellow: #D4A017;
+            --text: #2C2416;
+            --text-light: #5C4F3D;
+            --text-muted: #8B7D6B;
+            --bg: #FAFAF6;
+            --card-bg: #FFFFFF;
+            --border: #E0D8CC;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #2C2416 0%, #4A3728 40%, #6B4226 100%);
+            color: #F5F1EB;
+            padding: 80px 24px 60px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect fill="rgba(255,255,255,0.02)" width="1" height="100"/><rect fill="rgba(255,255,255,0.01)" x="3" width="1" height="100"/><rect fill="rgba(255,255,255,0.015)" x="7" width="1" height="100"/></svg>') repeat;
+        }
+        .hero-content { position: relative; z-index: 1; max-width: 800px; margin: 0 auto; }
+        .hero h1 {
+            font-size: clamp(2rem, 5vw, 3.2rem);
+            font-weight: 400;
+            letter-spacing: -0.02em;
+            margin-bottom: 8px;
+            line-height: 1.2;
+        }
+        .hero .subtitle {
+            font-size: clamp(1rem, 2.5vw, 1.3rem);
+            font-weight: 300;
+            opacity: 0.8;
+            margin-bottom: 24px;
+            font-style: italic;
+        }
+        .hero .tagline {
+            font-size: 0.95rem;
+            opacity: 0.6;
+            max-width: 640px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+        .hero .count-badge {
+            display: inline-block;
+            background: rgba(255,255,255,0.12);
+            border: 1px solid rgba(255,255,255,0.2);
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            margin-bottom: 20px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            letter-spacing: 0.05em;
+        }
+
+        /* Nav */
+        .nav {
+            background: var(--card-bg);
+            border-bottom: 1px solid var(--border);
+            padding: 12px 24px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            display: flex;
+            gap: 8px;
+            overflow-x: auto;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .nav a {
+            color: var(--text-light);
+            text-decoration: none;
+            font-size: 0.78rem;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            padding: 5px 12px;
+            border-radius: 14px;
+            background: var(--stone-lightest);
+            white-space: nowrap;
+            transition: all 0.2s;
+            border: 1px solid transparent;
+        }
+        .nav a:hover { background: var(--wood-pale); color: var(--wood); border-color: var(--wood-warm); }
+        .nav a.section-label {
+            background: none;
+            font-weight: 700;
+            color: var(--wood);
+            padding-left: 4px;
+            padding-right: 4px;
+            cursor: default;
+            font-size: 0.72rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        .nav a.bauhaus-label { color: var(--bauhaus-red); }
+
+        .container { max-width: 1200px; margin: 0 auto; padding: 40px 24px; }
+
+        /* Chapter headers */
+        .chapter-header {
+            margin-top: 60px;
+            margin-bottom: 20px;
+            padding: 32px 0;
+            border-top: 3px solid var(--wood-warm);
+        }
+        .chapter-header.bauhaus { border-top-color: var(--bauhaus-red); }
+        .chapter-header.contemporary { border-top-color: var(--forest-light); }
+        .chapter-header h2 {
+            font-size: 2rem;
+            font-weight: 400;
+            color: var(--wood);
+            margin-bottom: 8px;
+            line-height: 1.2;
+        }
+        .chapter-header.bauhaus h2 { color: var(--bauhaus-red); }
+        .chapter-header.contemporary h2 { color: var(--forest); }
+        .chapter-header .chapter-num {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            font-size: 0.75rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            margin-bottom: 4px;
+        }
+        .chapter-header p {
+            font-size: 0.95rem;
+            color: var(--text-light);
+            max-width: 700px;
+            font-style: italic;
+        }
+
+        /* Architect sections */
+        .architect-section {
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+        .architect-section h3 {
+            font-size: 1.5rem;
+            font-weight: 400;
+            color: var(--wood);
+            border-bottom: 1px solid var(--stone-light);
+            padding-bottom: 6px;
+            margin-bottom: 4px;
+        }
+        .architect-section .bio {
+            font-size: 0.88rem;
+            color: var(--text-muted);
+            font-style: italic;
+            margin-bottom: 16px;
+        }
+
+        /* Cards */
+        .house-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 28px 28px 24px;
+            margin-bottom: 20px;
+            transition: box-shadow 0.3s, transform 0.2s;
+            position: relative;
+        }
+        .house-card:hover {
+            box-shadow: 0 8px 32px rgba(44, 36, 22, 0.08);
+            transform: translateY(-1px);
+        }
+        .house-card.north-star {
+            border: 2px solid var(--wood-warm);
+            background: linear-gradient(135deg, #FFFDF8 0%, #FFF8EE 100%);
+        }
+        .house-card.north-star::before {
+            content: '★ THE NORTH STAR';
+            position: absolute; top: -12px; left: 24px;
+            background: var(--wood); color: #FFF;
+            font-size: 0.7rem;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            padding: 3px 12px; border-radius: 10px;
+            letter-spacing: 0.1em;
+        }
+        .house-card.hungarian { border-left: 4px solid var(--forest-light); }
+        .house-card.bauhaus-card { border-left: 4px solid var(--bauhaus-red); }
+        .house-card.contemporary-card { border-left: 4px solid var(--forest-light); }
+
+        .card-header { display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+        .card-header h4 { font-size: 1.25rem; font-weight: 600; color: var(--text); line-height: 1.3; }
+        .card-header .formal-name { font-size: 0.82rem; color: var(--text-muted); font-weight: 400; font-style: italic; }
+        .card-meta {
+            display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 14px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            font-size: 0.8rem;
+        }
+        .card-meta span { display: inline-flex; align-items: center; gap: 4px; color: var(--text-muted); }
+        .card-meta .icon { font-size: 1rem; }
+
+        .materials-bar { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 14px; }
+        .material-tag {
+            background: var(--stone-lightest); border: 1px solid var(--border); color: var(--text-light);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            font-size: 0.73rem; padding: 2px 9px; border-radius: 10px;
+        }
+        .material-tag.stone { background: #E8E0D4; border-color: #C4B9A8; }
+        .material-tag.wood { background: #F0E0CC; border-color: #D4A574; color: var(--wood); }
+        .material-tag.glass { background: #E0EBF0; border-color: #B0C8D8; color: var(--water); }
+        .material-tag.concrete { background: #E8E8E8; border-color: #CCC; color: #555; }
+        .material-tag.metal { background: #E8E4E0; border-color: #C8C0B8; color: #666; }
+
+        .card-body p { margin-bottom: 10px; font-size: 0.93rem; }
+        .card-body .label {
+            font-weight: 700; color: var(--wood); font-size: 0.78rem;
+            text-transform: uppercase; letter-spacing: 0.05em;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            display: block; margin-bottom: 3px; margin-top: 14px;
+        }
+        .card-body .label:first-child { margin-top: 0; }
+        .card-body .label.bauhaus-label { color: var(--bauhaus-red); }
+
+        .visit-link {
+            display: inline-block; margin-top: 10px;
+            color: var(--water); text-decoration: none;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            font-size: 0.82rem; border-bottom: 1px solid rgba(74,107,138,0.3);
+            transition: border-color 0.2s;
+        }
+        .visit-link:hover { border-color: var(--water); }
+
+        /* Principles */
+        .principles {
+            background: linear-gradient(135deg, #2C2416, #3D3020);
+            color: #E8E0D4; border-radius: 16px; padding: 48px 40px; margin: 60px 0;
+        }
+        .principles h2 { color: var(--wood-warm); font-size: 1.8rem; font-weight: 400; margin-bottom: 32px; text-align: center; }
+        .principles-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; }
+        .principle-card {
+            background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 10px; padding: 20px;
+        }
+        .principle-card .num { font-size: 1.8rem; font-weight: 300; color: var(--wood-warm); opacity: 0.7; line-height: 1; margin-bottom: 6px; }
+        .principle-card h3 { font-size: 0.95rem; color: #F5F1EB; margin-bottom: 6px; }
+        .principle-card p { font-size: 0.85rem; line-height: 1.6; opacity: 0.8; }
+
+        /* Materials */
+        .materials-section { margin: 60px 0; }
+        .materials-section h2 { font-size: 1.8rem; font-weight: 400; color: var(--wood); margin-bottom: 24px; text-align: center; }
+        .materials-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+        .material-card {
+            background: var(--card-bg); border: 1px solid var(--border); border-radius: 10px; padding: 18px;
+        }
+        .material-card h4 { font-size: 0.95rem; color: var(--text); margin-bottom: 3px; }
+        .material-card .latin { font-style: italic; color: var(--text-muted); font-size: 0.8rem; margin-bottom: 6px; }
+        .material-card p { font-size: 0.85rem; color: var(--text-light); margin-bottom: 3px; }
+        .material-card .use {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            font-size: 0.76rem; color: var(--forest); background: #E8F0E8;
+            padding: 2px 9px; border-radius: 8px; display: inline-block; margin-top: 6px;
+        }
+
+        .how-to-use {
+            background: var(--stone-lightest); border-radius: 16px; padding: 36px; margin: 40px 0;
+        }
+        .how-to-use h2 { font-size: 1.5rem; font-weight: 400; color: var(--wood); margin-bottom: 20px; }
+        .how-to-use ol { padding-left: 24px; }
+        .how-to-use li { margin-bottom: 10px; font-size: 0.93rem; }
+        .how-to-use li strong { color: var(--wood); }
+
+        .footer {
+            text-align: center; padding: 40px 24px; color: var(--text-muted);
+            font-size: 0.85rem; border-top: 1px solid var(--border); margin-top: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .house-card { padding: 22px 18px; }
+            .principles { padding: 28px 20px; }
+            .nav { justify-content: flex-start; }
+            .how-to-use { padding: 24px 18px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="hero">
+    <div class="hero-content">
+        <div class="count-badge">32 HOUSES · 3 CHAPTERS · 1922–2023</div>
+        <h1>Budapest Renovation Inspiration</h1>
+        <p class="subtitle">Wood · Stone · Natural Materials — From Bauhaus to Today</p>
+        <p class="tagline">A curated collection for renovating a Budapest house with Bauhaus bones. Classic mid-century warmth, contemporary craft, and the Hungarian tradition of building with nature.</p>
+    </div>
+</div>
+
+<nav class="nav">
+    <a class="section-label">I. MID-CENTURY</a>
+    <a href="#wright">Wright</a>
+    <a href="#neutra">Neutra</a>
+    <a href="#aalto">Aalto</a>
+    <a href="#breuer">Breuer 🇭🇺</a>
+    <a href="#saarinen">Saarinen</a>
+    <a href="#lautner">Lautner</a>
+    <a href="#moore">MLTW</a>
+    <a href="#nakashima">Nakashima</a>
+    <a href="#frey">Frey</a>
+    <a class="section-label">II. CONTEMPORARY</a>
+    <a href="#murcutt">Murcutt</a>
+    <a href="#zumthor">Zumthor</a>
+    <a href="#kundig">Olson Kundig</a>
+    <a href="#mk27">MK27</a>
+    <a href="#norm">Norm</a>
+    <a href="#kuma">Kuma</a>
+    <a href="#pawson">Pawson</a>
+    <a href="#hungarian">Hungarian 🇭🇺</a>
+    <a class="section-label bauhaus-label">III. BAUHAUS</a>
+    <a href="#bauhaus-section">Bauhaus Fusion</a>
+    <a href="#principles">Principles</a>
+    <a href="#materials">Materials</a>
+</nav>
+
+<div class="container">
+
+<!-- ============================================ -->
+<!-- CHAPTER I: CLASSIC MID-CENTURY -->
+<!-- ============================================ -->
+
+<div class="chapter-header" id="chapter-1">
+    <div class="chapter-num">Chapter I</div>
+    <h2>Classic Mid-Century (1922–1975)</h2>
+    <p>The canon. Houses that defined organic modernism — where stone, wood, and glass come together to dissolve the boundary between architecture and nature.</p>
+</div>
+
+<!-- WRIGHT -->
+<div class="architect-section" id="wright">
+    <h3>Frank Lloyd Wright</h3>
+    <p class="bio">American, 1867–1959. Pioneer of organic architecture — buildings should grow from their site like a plant from soil.</p>
+</div>
+
+<div class="house-card north-star">
+    <div class="card-header"><div><h4>1. Fallingwater</h4><span class="formal-name">Edgar J. Kaufmann Sr. Residence</span></div></div>
+    <div class="card-meta">
+        <span><span class="icon">📍</span> Mill Run, Pennsylvania</span>
+        <span><span class="icon">📅</span> 1939</span>
+    </div>
+    <div class="materials-bar">
+        <span class="material-tag stone">Native sandstone (quarried on-site)</span>
+        <span class="material-tag concrete">Reinforced concrete</span>
+        <span class="material-tag wood">Black walnut</span>
+        <span class="material-tag glass">Glass</span>
+        <span class="material-tag metal">Steel</span>
+    </div>
+    <div class="card-body">
+        <span class="label">Why it matters</span>
+        <p>The definitive organic architecture house. Stone walls built from the same sandstone ledge it sits on. Walnut millwork throughout. Cantilevered terraces hover over Bear Run creek. Every material is local or serves to blur inside and outside.</p>
+        <span class="label">Renovation takeaway</span>
+        <p>Stone from the site. Wood that ages. A house that's <em>part</em> of the land, not sitting on it. Wright's built-in stone-and-walnut furniture is directly applicable to Budapest.</p>
+    </div>
+    <a href="https://fallingwater.org" class="visit-link" target="_blank">Visit → fallingwater.org</a>
+</div>
+
+<div class="house-card">
+    <div class="card-header"><div><h4>2. Kentuck Knob</h4><span class="formal-name">I.N. Hagan House</span></div></div>
+    <div class="card-meta">
+        <span><span class="icon">📍</span> Chalk Hill, Pennsylvania</span><span><span class="icon">📅</span> 1956</span>
+    </div>
+    <div class="materials-bar">
+        <span class="material-tag wood">Tidewater red cypress</span>
+        <span class="material-tag stone">Native sandstone</span>
+        <span class="material-tag metal">Copper roof</span>
+    </div>
+    <div class="card-body">
+        <span class="label">Why it matters</span>
+        <p>7 miles from Fallingwater, completely different. Single-story Usonian hugging a hilltop. Cypress aged to silver-grey. Hexagonal grid creates flowing spaces without corridors.</p>
+        <span class="label">Renovation takeaway</span>
+        <p>More achievable than Fallingwater. Same stone flows exterior to interior fireplace. Material continuity makes modest footprints feel expansive.</p>
+    </div>
+    <a href="https://kentuckknob.com" class="visit-link" target="_blank">Visit → kentuckknob.com</a>
+</div>
+
+<div class="house-card">
+    <div class="card-header"><div><h4>3. Taliesin West</h4><span class="formal-name">Winter Home &amp; Studio</span></div></div>
+    <div class="card-meta">
+        <span><span class="icon">📍</span> Scottsdale, Arizona</span><span><span class="icon">📅</span> 1937</span>
+    </div>
+    <div class="materials-bar">
+        <span class="material-tag stone">Desert rubblestone</span>
+        <span class="material-tag concrete">Concrete</span>
+        <span class="material-tag wood">Redwood</span>
+        <span class="material-tag glass">Canvas → Glass</span>
+    </div>
+    <div class="card-body">
+        <span class="label">Why it matters</span>
+        <p>Massive desert masonry — volcanic rocks set in concrete. Textured like the desert floor stood up. Redwood beams soften the interior.</p>
+        <span class="label">Renovation takeaway</span>
+        <p>Rubblestone creates texture smooth stone can't. Rough stone + finished wood is one of architecture's most powerful pairings. Thermal mass indoors suits Budapest's continental climate perfectly.</p>
+    </div>
+</div>
+
+<div class="house-card">
+    <div class="card-header"><div><h4>4. Seth Peterson Cottage</h4></div></div>
+    <div class="card-meta">
+        <span><span class="icon">📍</span> Lake Delton, Wisconsin</span><span><span class="icon">📅</span> 1958</span>
+    </div>
+    <div class="materials-bar">
+        <span class="material-tag stone">Sandstone</span>
+        <span class="material-tag wood">Wood</span>
+        <span class="material-tag glass">Floor-to-ceiling glass</span>
+    </div>
+    <div class="card-body">
+        <span class="label">Why it matters</span>
+        <p>Wright's smallest commission — 880 sq ft. A massive sandstone fireplace anchors the room. Wright called it his "best small building."</p>
+        <span class="label">Renovation takeaway</span>
+        <p>One bold stone gesture defines the whole space. At ~80 sqm, directly relevant to individual rooms in a 300 sqm house.</p>
+    </div>
+    <a href="https://sethpeterson.org" class="visit-link" target="_blank">Stay → sethpeterson.org (rentable)</a>
+</div>
+
+<!-- NEUTRA -->
+<div class="architect-section" id="neutra">
+    <h3>Richard Neutra</h3>
+    <p class="bio">Austrian-American, 1892–1970. Brought Viennese precision to California sunshine.</p>
+</div>
+
+<div class="house-card">
+    <div class="card-header"><div><h4>5. Kaufmann Desert House</h4></div></div>
+    <div class="card-meta">
+        <span><span class="icon">📍</span> Palm Springs, California</span><span><span class="icon">📅</span> 1946</span>
+    </div>
+    <div class="materials-bar">
+        <span class="material-tag stone">Utah buff sandstone</span>
+        <span class="material-tag metal">Steel</span>
+        <span class="material-tag glass">Glass</span>
+        <span class="material-tag metal">Aluminum</span>
+    </div>
+    <div class="card-body">
+        <span class="label">Why it matters</span>
+        <p>Same Kaufmann who commissioned Fallingwater. Pinwheel plan with four wings around a pool. Sandstone anchors the house to the desert; steel and glass dissolve boundaries.</p>
+        <span class="label">Renovation takeaway</span>
+        <p>Stone as anchor — one material giving weight while everything else is light. A stone wall running continuously through the glass line, inside to outside.</p>
+    </div>
+</div>
+
+<!-- AALTO -->
+<div class="architect-section" id="aalto">
+    <h3>Alvar Aalto</h3>
+    <p class="bio">Finnish, 1898–1976. The great humanizer of modernism. Always chose warmth over coldness.</p>
+</div>
+
+<div class="house-card">
+    <div class="card-header"><div><h4>6. Villa Mairea</h4></div></div>
+    <div class="card-meta">
+        <span><span class="icon">📍</span> Noormarkku, Finland</span><span><span class="icon">📅</span> 1939</span>
+    </div>
+    <div class="materials-bar">
+        <span class="material-tag wood">Pine</span><span class="material-tag wood">Birch</span>
+        <span class="material-tag wood">Teak</span><span class="material-tag stone">Brick</span>
+        <span class="material-tag stone">Natural stone</span><span class="material-tag metal">Steel</span>
+    </div>
+    <div class="card-body">
+        <span class="label">Why it matters</span>
+        <p>Every room different. Exterior shifts from render to wood slats to brick. Birch columns wrapped in rattan evoke a forest. Sauna in rough stone. Swimming pool shaped like a pond. The richest material palette on this list.</p>
+        <span class="label">Renovation takeaway</span>
+        <p>Material <em>intention</em> over uniformity. Each space gets its own treatment. This is how to renovate room by room without it feeling disjointed. Finnish wood culture is directly relevant to Central Europe.</p>
+    </div>
+    <a href="https://villamairea.fi" class="visit-link" target="_blank">Visit → villamairea.fi</a>
+</div>
+
+<div class="house-card">
+    <div class="card-header"><div><h4>7. Muuratsalo Experimental House</h4></div></div>
+    <div class="card-meta">
+        <span><span class="icon">📍</span> Muuratsalo Island, Finland</span><span><span class="icon">📅</span> 1953</span>
+    </div>
+    <div class="materials-bar">
+        <span class="material-tag stone">50+ types of brick &amp; tile</span>
+        <span class="material-tag wood">Painted wood</span><span class="material-tag metal">Copper</span>
+    </div>
+    <div class="card-body">
+        <span class="label">Why it matters</span>
+        <p>Aalto's summer house and material laboratory. Courtyard walls are a patchwork of different brick and tile experiments — a built sample wall, an architect's mood board made real.</p>
+        <span class="label">Renovation takeaway</span>
+        <p>Try a material "test wall" before committing. The courtyard plan oriented to trap low sun works for south-facing Budapest gardens.</p>
+    </div>
+</div>
+
+<!-- BREUER -->
+<div class="architect-section" id="breuer">
+    <h3>Marcel Breuer 🇭🇺</h3>
+    <p class="bio">Hungarian-American, 1902–1981. Born in Pécs. Bauhaus student and master. Designed the Wassily Chair at 23. The architect who literally bridges Bauhaus and mid-century warmth — he was both.</p>
+</div>
+
+<div class="house-card hungarian">
+    <div class="card-header"><div><h4>8. Breuer House II</h4><span class="formal-name">Own family home</span></div></div>
+    <div class="card-meta">
+        <span><span class="icon">📍</span> New Canaan, Connecticut</span><span><span class="icon">📅</span> 1948</span>
+        <span><span class="icon">🇭🇺</span> Hungarian architect</span>
+    </div>
+    <div class="materials-bar">
+        <span class="material-tag stone">Fieldstone</span><span class="material-tag wood">Cypress</span>
+        <span class="material-tag glass">Glass</span><span class="material-tag metal">Steel</span>
+    </div>
+    <div class="card-body">
+        <span class="label">Why it matters</span>
+        <p>Breuer — born in Pécs — designed this for his own family. Fieldstone base, wood-framed upper level cantilevered over a slope. A Hungarian modernist's personal statement.</p>
+        <span class="label">Renovation takeaway</span>
+        <p>This is a <em>Hungarian</em> architect's house. Fieldstone base + wood upper = heavy stone on ground, warm wood above. Bold primary colors against natural materials.</p>
+    </div>
+</div>
+
+<div class="house-card hungarian">
+    <div class="card-header"><div><h4>9. Stillman House I</h4></div></div>
+    <div class="card-meta">
+        <span><span class="icon">📍</span> Litchfield, Connecticut</span><span><span class="icon">📅</span> 1951</span>
+        <span><span class="icon">🇭🇺</span> Hungarian architect</span>
+    </div>
+    <div class="materials-bar">
+        <span class="material-tag stone">Fieldstone</span><span class="material-tag wood">Wood</span>
+        <span class="material-tag glass">Glass</span><span class="material-tag metal">Steel</span>
+    </div>
+    <div class="card-body">
+        <span class="label">Why it matters</span>
+        <p>Breuer's finest residential work. Local fieldstone — the same stone in colonial Connecticut walls — grounds the modernist structure. Fireplace mural by Alexander Calder. Warm wood ceilings.</p>
+        <span class="label">Renovation takeaway</span>
+        <p>Use local stone. For Budapest: Hungarian limestone, Buda dolomite, or Danube river stone. Let the stone tell people where the house is.</p>
+    </div>
+</div>
+
+<div class="house-card hungarian">
+    <div class="card-header"><div><h4>10. Gagarin House I</h4></div></div>
+    <div class="card-meta">
+        <span><span class="icon">📍</span> Litchfield, Connecticut</span><span><span class="icon">📅</span> 1957</span>
+        <span><span class="icon">🇭🇺</span> Hungarian architect</span>
+    </div>
+    <div class="materials-bar">
+        <span class="material-tag stone">Fieldstone</span><span class="material-tag stone">Bluestone terraces</span>
+        <span class="material-tag wood">Wood</span><span class="material-tag concrete">Concrete</span>
+    </div>
+    <div class="card-body">
+        <span class="label">Why it matters</span>
+        <p>Monumental fieldstone chimney. Bluestone terraces connecting house to hillside. A tree trunk embedded in the concrete fireplace surround — nature literally built in.</p>
+        <span class="label">Renovation takeaway</span>
+        <p>Leave evidence of landscape in the architecture. The tree-trunk detail says: we incorporated nature, not removed it.</p>
+    </div>
+</div>
+
+<!-- SAARINEN -->
+<div class="architect-section" id="saarinen">
+    <h3>The Saarinens</h3>
+    <p class="bio">Finnish father and son. Eliel (1873–1950) bridged Arts &amp; Crafts and Nordic modernism. Eero (1910–1961) designed the TWA Terminal.</p>
+</div>
+
+<div class="house-card">
+    <div class="card-header"><div><h4>11. Miller House</h4><span class="formal-name">Eero Saarinen · Alexander Girard · Dan Kiley</span></div></div>
+    <div class="card-meta">
+        <span><span class="icon">📍</span> Columbus, Indiana</span><span><span class="icon">📅</span> 1957</span>
+    </div>
+    <div class="materials-bar">
+        <span class="material-tag stone">Marble</span><span class="material-tag stone">Slate</span>
+        <span class="material-tag wood">Walnut</span><span class="material-tag metal">Steel</span>
+    </div>
+    <div class="card-body">
+        <span class="label">Why it matters</span>
+        <p>Three masters collaborating. Girard's legendary sunken conversation pit. A storage wall with 1,000+ collected objects. Kiley's landscape of honey locust trees.</p>
+        <span class="label">Renovation takeaway</span>
+        <p>The conversation pit. Open shelving displaying curated objects — character over minimalism. Walnut paneling and slate floors are timeless.</p>
+    </div>
+</div>
+
+<div class="house-card">
+    <div class="card-header"><div><h4>12. Saarinen House (Cranbrook)</h4><span class="formal-name">Eliel &amp; Loja Saarinen</span></div></div>
+    <div class="card-meta">
+        <span><span class="icon">📍</span> Bloomfield Hills, Michigan</span><span><span class="icon">📅</span> 1930</span>
+    </div>
+    <div class="materials-bar">
+        <span class="material-tag stone">Brick</span><span class="material-tag metal">Copper</span>
+        <span class="material-tag wood">Wood paneling</span><span class="material-tag metal">Wrought iron</span>
+    </div>
+    <div class="card-body">
+        <span class="label">Why it matters</span>
+        <p>Gesamtkunstwerk — everything designed together: building, furniture, rugs, fixtures, curtains. Wood paneling, handwoven textiles, custom metalwork. Arts &amp; Crafts warmth meets Nordic modernism.</p>
+        <span class="label">Renovation takeaway</span>
+        <p>Design <em>everything</em> in a room — lighting, textiles, hardware. Same wood in paneling, furniture, and trim creates coherence. Finnish sensibility is culturally close to Hungarian values.</p>
+    </div>
+</div>
+
+<!-- LAUTNER -->
+<div class="architect-section" id="lautner">
+    <h3>John Lautner</h3>
+    <p class="bio">American, 1911–1994. Wright apprentice who pushed organic architecture to its most dramatic expression.</p>
+</div>
+
+<div class="house-card">
+    <div class="card-header"><div><h4>13. Sheats–Goldstein Residence</h4></div></div>
+    <div class="card-meta">
+        <span><span class="icon">📍</span> Los Angeles, California</span><span><span class="icon">📅</span> 1963</span>
+    </div>
+    <div class="materials-bar">
+        <span class="material-tag concrete">Poured concrete</span><span class="material-tag stone">Boulders (integrated)</span>
+        <span class="material-tag glass">Frameless glass</span><span class="material-tag metal">Steel</span>
+    </div>
+    <div class="card-body">
+        <span class="label">Why it matters</span>
+        <p>Built on a sandstone ledge that becomes interior — boulders protrude through floor and walls. Coffered concrete ceiling creates a cave-like canopy.</p>
+        <span class="label">Renovation takeaway</span>
+        <p>Don't hide the site — celebrate it. Old walls, stone foundations, existing structure = materials, not obstacles.</p>
+    </div>
+</div>
+
+<!-- MLTW -->
+<div class="architect-section" id="moore">
+    <h3>MLTW / Charles Moore</h3>
+    <p class="bio">Four-person firm that proved housing could be radical and regional.</p>
+</div>
+
+<div class="house-card">
+    <div class="card-header"><div><h4>14. The Sea Ranch</h4><span class="formal-name">Condominium One</span></div></div>
+    <div class="card-meta">
+        <span><span class="icon">📍</span> Sonoma County, California</span><span><span class="icon">📅</span> 1965</span>
+    </div>
+    <div class="materials-bar">
+        <span class="material-tag wood">Rough-sawn redwood</span><span class="material-tag wood">Heavy timber</span>
+        <span class="material-tag concrete">Concrete block</span>
+    </div>
+    <div class="card-body">
+        <span class="label">Why it matters</span>
+        <p>Unpainted redwood weathering to silver-grey. Buildings angled for Pacific wind. Architecture as environmental stewardship.</p>
+        <span class="label">Renovation takeaway</span>
+        <p>Naturally weathering wood — exteriors should age like furniture. European larch or Douglas fir weather similarly. Multiple small volumes create intimate spaces.</p>
+    </div>
+</div>
+
+<!-- NAKASHIMA -->
+<div class="architect-section" id="nakashima">
+    <h3>George Nakashima</h3>
+    <p class="bio">Japanese-American, 1905–1990. Woodworker-architect. Every tree has a soul.</p>
+</div>
+
+<div class="house-card">
+    <div class="card-header"><div><h4>15. Nakashima Compound</h4></div></div>
+    <div class="card-meta">
+        <span><span class="icon">📍</span> New Hope, Pennsylvania</span><span><span class="icon">📅</span> 1946–1974</span>
+    </div>
+    <div class="materials-bar">
+        <span class="material-tag stone">Local stone</span><span class="material-tag wood">Walnut</span>
+        <span class="material-tag wood">Cherry</span><span class="material-tag wood">Oak</span>
+        <span class="material-tag concrete">Concrete</span>
+    </div>
+    <div class="card-body">
+        <span class="label">Why it matters</span>
+        <p>21 structures over 28 years. Each an experiment in wood joinery. Hand-selected trees. The Conoid Studio's hyperbolic paraboloid roof. Walnut slabs as room partitions.</p>
+        <span class="label">Renovation takeaway</span>
+        <p>The ultimate wood reference. Go to the timber yard, pick boards yourself. Live edges, natural grain, honest joinery.</p>
+    </div>
+    <a href="https://nakashimawoodworkers.com" class="visit-link" target="_blank">Visit → nakashimawoodworkers.com</a>
+</div>
+
+<!-- FREY -->
+<div class="architect-section" id="frey">
+    <h3>Albert Frey</h3>
+    <p class="bio">Swiss-American, 1903–1998. Le Corbusier's protégé. Father of desert modernism.</p>
+</div>
+
+<div class="house-card">
+    <div class="card-header"><div><h4>16. Frey House II</h4></div></div>
+    <div class="card-meta">
+        <span><span class="icon">📍</span> Palm Springs, California</span><span><span class="icon">📅</span> 1964</span>
+    </div>
+    <div class="materials-bar">
+        <span class="material-tag metal">Steel</span><span class="material-tag glass">Glass</span>
+        <span class="material-tag metal">Corrugated metal</span><span class="material-tag stone">Desert boulder</span>
+    </div>
+    <div class="card-body">
+        <span class="label">Why it matters</span>
+        <p>800 sq ft. A massive boulder pushes through the bedroom wall — becomes the headboard. Equal parts industrial and natural.</p>
+        <span class="label">Renovation takeaway</span>
+        <p>One powerful natural element defines the whole house. Radical doesn't need a big budget.</p>
+    </div>
+</div>
+
+
+<!-- ============================================ -->
+<!-- CHAPTER II: CONTEMPORARY -->
+<!-- ============================================ -->
+
+<div class="chapter-header contemporary" id="chapter-2">
+    <div class="chapter-num">Chapter II</div>
+    <h2>Contemporary Houses with Mid-Century DNA (1994–2023)</h2>
+    <p>Modern architects carrying forward the same values — natural materials, honest structure, connection to landscape — with today's technology and sensibility. What mid-century principles look like when built now.</p>
+</div>
+
+<!-- MURCUTT -->
+<div class="architect-section" id="murcutt">
+    <h3>Glenn Murcutt</h3>
+    <p class="bio">Australian, b. 1936. Works alone — no employees. "Touch the earth lightly." Pritzker Prize 2002.</p>
+</div>
+
+<div class="house-card contemporary-card">
+    <div class="card-header"><div><h4>17. Simpson-Lee House</h4></div></div>
+    <div class="card-meta">
+        <span><span class="icon">📍</span> Mount Wilson, NSW, Australia</span><span><span class="icon">📅</span> 1994</span>
+    </div>
+    <div class="materials-bar">
+        <span class="material-tag stone">Sandstone</span><span class="material-tag metal">Steel</span>
+        <span class="material-tag glass">Glass</span><span class="material-tag metal">Zinc roof</span>
+    </div>
+    <div class="card-body">
+        <span class="label">Why it matters</span>
+        <p>Long thin pavilion. Sandstone walls anchor it to the Blue Mountains ridge. Adjustable louvres respond to sun, wind, bushfire. Environmentally tuned like an instrument.</p>
+        <span class="label">Renovation takeaway</span>
+        <p>Heavy stone base, lighter materials above. Obsessive environmental performance (passive solar, natural ventilation) is what renovation should achieve today.</p>
+    </div>
+</div>
+
+<!-- ZUMTHOR -->
+<div class="architect-section" id="zumthor">
+    <h3>Peter Zumthor</h3>
+    <p class="bio">Swiss, b. 1943. The poet of materials. Pritzker Prize 2009. Every surface considered, every joint a decision.</p>
+</div>
+
+<div class="house-card contemporary-card">
+    <div class="card-header"><div><h4>18. Zumthor's Own Home</h4></div></div>
+    <div class="card-meta">
+        <span><span class="icon">📍</span> Haldenstein, Switzerland</span><span><span class="icon">📅</span> 2005</span>
+    </div>
+    <div class="materials-bar">
+        <span class="material-tag wood">Swiss spruce</span><span class="material-tag wood">Canadian maple</span>
+        <span class="material-tag glass">Glass</span><span class="material-tag concrete">Concrete</span>
+    </div>
+    <div class="card-body">
+        <span class="label">Why it matters</span>
+        <p>A wooden box where wood is so precisely selected and joined that surfaces feel like furniture. Windows frame specific Alpine views. Almost nothing decorative — beauty is entirely in material quality.</p>
+        <span class="label">Renovation takeaway</span>
+        <p>Quality over quantity. One wood species, perfectly executed, beats ten materials poorly installed. Find the best Hungarian oak and let it tell the story.</p>
+    </div>
+</div>
+
+<div class="house-card contemporary-card">
+    <div class="card-header"><div><h4>19. Vacation Houses, Leis</h4></div></div>
+    <div class="card-meta">
+        <span><span class="icon">📍</span> Vals, Graubünden, Switzerland</span><span><span class="icon">📅</span> 2009</span>
+    </div>
+    <div class="materials-bar">
+        <span class="material-tag wood">Larch (exterior)</span><span class="material-tag wood">Spruce (interior)</span>
+        <span class="material-tag stone">Local stone</span>
+    </div>
+    <div class="card-body">
+        <span class="label">Why it matters</span>
+        <p>Three timber houses that look centuries old but are contemporary inside. Wood-fired ovens, saunas, panoramic windows. Available as vacation rentals.</p>
+        <span class="label">Renovation takeaway</span>
+        <p>Excellent but quiet. Wood-fired oven as central element resonates with Hungarian cserépkályha tradition. New work that defers to neighborhood.</p>
+    </div>
+    <a href="https://www.zfrh.ch" class="visit-link" target="_blank">Stay → zumthor-ferienhäuser.ch</a>
+</div>
+
+<!-- OLSON KUNDIG -->
+<div class="architect-section" id="kundig">
+    <h3>Olson Kundig / Tom Kundig</h3>
+    <p class="bio">American, b. 1954. Known for hand-operated steel "gizmos," raw materials, and houses that belong to their landscape. Based in Seattle.</p>
+</div>
+
+<div class="house-card contemporary-card">
+    <div class="card-header"><div><h4>20. The Pierre</h4></div></div>
+    <div class="card-meta">
+        <span><span class="icon">📍</span> San Juan Island, Washington</span><span><span class="icon">📅</span> 2010</span>
+    </div>
+    <div class="materials-bar">
+        <span class="material-tag stone">Native stone (excavated &amp; reused)</span>
+        <span class="material-tag concrete">Concrete (crushed-rock aggregate)</span>
+        <span class="material-tag metal">Steel</span><span class="material-tag glass">Glass</span>
+    </div>
+    <div class="card-body">
+        <span class="label">Why it matters</span>
+        <p>"The Pierre" — French for stone. A bunker nestled into a rock outcropping. Excavated stone crushed and mixed into concrete floors — the house is literally <em>made of</em> its site. Green roof makes it disappear from above. Raw stone walls inside create a luxurious cave.</p>
+        <span class="label">Renovation takeaway</span>
+        <p>The most Fallingwater-like contemporary house. Shows how mid-century organic values translate to 21st-century construction. Kundig's hand-craft detailing (massive steel pivot doors, hand-operated mechanisms) adds warmth to raw materials. A Budapest renovation with existing stone walls should study this closely.</p>
+    </div>
+</div>
+
+<!-- STUDIO MK27 -->
+<div class="architect-section" id="mk27">
+    <h3>Studio MK27 / Marcio Kogan</h3>
+    <p class="bio">Brazilian, b. 1952. Heir to Brazilian modernism (Niemeyer, Bo Bardi). Cinematic spaces with natural materials.</p>
+</div>
+
+<div class="house-card contemporary-card">
+    <div class="card-header"><div><h4>21. Catuçaba Farm</h4></div></div>
+    <div class="card-meta">
+        <span><span class="icon">📍</span> Catuçaba, São Paulo, Brazil</span><span><span class="icon">📅</span> 2016</span>
+    </div>
+    <div class="materials-bar">
+        <span class="material-tag wood">FSC eucalyptus</span><span class="material-tag stone">Local clay brick</span>
+        <span class="material-tag wood">Timber frame</span><span class="material-tag glass">Glass</span>
+    </div>
+    <div class="card-body">
+        <span class="label">Why it matters</span>
+        <p>Slender timber house at 1,500m, raised on pillars. Off-grid (solar, rainwater). FSC-certified wood, local materials. Brazil's first Platinum Green Building Council project. Eucalyptus screens create dappled light.</p>
+        <span class="label">Renovation takeaway</span>
+        <p>Slatted wood screens filtering light and view — perfect for south-facing Budapest windows. Shows sustainable + beautiful aren't contradictory. Brazilian modernism and Budapest Bauhaus share the same DNA of clean lines + natural materials.</p>
+    </div>
+</div>
+
+<!-- NORM -->
+<div class="architect-section" id="norm">
+    <h3>Norm Architects</h3>
+    <p class="bio">Danish practice. Blends Scandinavian minimalism with Japanese craft. Known for "soft minimalism."</p>
+</div>
+
+<div class="house-card contemporary-card">
+    <div class="card-header"><div><h4>22. Archipelago House</h4></div></div>
+    <div class="card-meta">
+        <span><span class="icon">📍</span> Swedish Coast</span><span><span class="icon">📅</span> 2020</span>
+    </div>
+    <div class="materials-bar">
+        <span class="material-tag wood">Pine cladding</span><span class="material-tag wood">Timber framing</span>
+        <span class="material-tag stone">Stone</span>
+    </div>
+    <div class="card-body">
+        <span class="label">Why it matters</span>
+        <p>Four wooden volumes interlocked on rocky coastline, inspired by Swedish boathouses. Danish-Japanese furniture collaboration. Double-height living space, natural pine throughout, terraced deck following the slope.</p>
+        <span class="label">Renovation takeaway</span>
+        <p>Nordic-Japanese crossover is relevant — both cultures share Central Europe's reverence for wood, craft, restraint. One wood species (pine) as both structure and finish. Multi-volume approach works when adding to existing houses.</p>
+    </div>
+</div>
+
+<!-- KENGO KUMA -->
+<div class="architect-section" id="kuma">
+    <h3>Kengo Kuma</h3>
+    <p class="bio">Japanese, b. 1954. Master of dissolving architecture into landscape using wood, stone, and woven materials. Tokyo 2020 stadium architect.</p>
+</div>
+
+<div class="house-card contemporary-card">
+    <div class="card-header"><div><h4>23. Suteki House</h4></div></div>
+    <div class="card-meta">
+        <span><span class="icon">📍</span> Portland, Oregon</span><span><span class="icon">📅</span> 2023</span>
+    </div>
+    <div class="materials-bar">
+        <span class="material-tag wood">Local cedar</span><span class="material-tag stone">Stone</span>
+        <span class="material-tag glass">Glass</span><span class="material-tag wood">Timber</span>
+    </div>
+    <div class="card-body">
+        <span class="label">Why it matters</span>
+        <p>Kuma <em>explicitly</em> cited Fallingwater as inspiration. L-shaped house wrapping a giant oak and stream. "Borrowed scenery" (shakkei) — a Japanese landscaping principle — frames nature from every room. Cedar and stone base.</p>
+        <span class="label">Renovation takeaway</span>
+        <p>A direct contemporary descendant of Wright, filtered through Japanese sensibility. "Borrowed scenery" — framing specific trees or views from specific rooms — is powerful for Budapest where you can frame garden views or distant Buda hills.</p>
+    </div>
+</div>
+
+<div class="house-card contemporary-card">
+    <div class="card-header"><div><h4>25. Haus Balma</h4></div></div>
+    <div class="card-meta">
+        <span><span class="icon">📍</span> Vals, Graubünden, Switzerland</span><span><span class="icon">📅</span> 2022</span>
+    </div>
+    <div class="materials-bar">
+        <span class="material-tag stone">Vals quartzite (882 panels)</span>
+        <span class="material-tag wood">Local timber</span><span class="material-tag glass">Glass</span>
+    </div>
+    <div class="card-body">
+        <span class="label">Why it matters</span>
+        <p>In the same village as Zumthor's Therme Vals. 882 stone panels appear to float — a "curtain of stone." Interior blends timber with stone, referencing Japanese pagodas and Alpine chalets. Won Architectural Design of the Year 2023.</p>
+        <span class="label">Renovation takeaway</span>
+        <p>Stone as screen, not just mass. Floating panels suggest stone can work in surprising, lightweight ways — thin veneers, suspended screens, perforated panels. This is how stone works in a Bauhaus geometry house.</p>
+    </div>
+</div>
+
+<!-- PAWSON -->
+<div class="architect-section" id="pawson">
+    <h3>John Pawson</h3>
+    <p class="bio">British, b. 1949. The world's most rigorous minimalist. Trained with Shiro Kuramata in Tokyo.</p>
+</div>
+
+<div class="house-card contemporary-card">
+    <div class="card-header"><div><h4>24. Home Farm</h4></div></div>
+    <div class="card-meta">
+        <span><span class="icon">📍</span> Cotswolds, England</span><span><span class="icon">📅</span> 2019</span>
+    </div>
+    <div class="materials-bar">
+        <span class="material-tag stone">Cotswold stone</span><span class="material-tag concrete">Lime plaster</span>
+        <span class="material-tag wood">Douglas fir</span><span class="material-tag wood">Elm</span>
+    </div>
+    <div class="card-body">
+        <span class="label">Why it matters</span>
+        <p>A 1610 farmhouse renovated by the world's most rigorous minimalist. Pawson kept ancient stone walls, added a 45m contemporary wing. Stone floors, lime plaster, Douglas fir windows, Donald Judd elm chairs. Three kitchens. Zero clutter.</p>
+        <span class="label">Renovation takeaway</span>
+        <p>The masterclass in renovating a historic building with a minimalist hand. You don't need decoration when materials are right. Keep old stone walls, add new elements in one warm wood. <strong>This is the exact Bauhaus-meets-organic-warmth sensibility the Budapest house needs.</strong></p>
+    </div>
+</div>
+
+<!-- HUNGARIAN CONTEMPORARY -->
+<div class="architect-section" id="hungarian">
+    <h3>Hungarian &amp; Central European</h3>
+    <p class="bio">Hungary has its own tradition of organic architecture — rooted in folk craft, natural materials, and connection to land that predates Wright. This is home ground.</p>
+</div>
+
+<div class="house-card hungarian">
+    <div class="card-header"><div><h4>26. Farkasrét Mortuary Chapel</h4><span class="formal-name">Imre Makovecz</span></div></div>
+    <div class="card-meta">
+        <span><span class="icon">📍</span> Budapest XII. district</span><span><span class="icon">📅</span> 1977</span>
+        <span><span class="icon">🇭🇺</span> Hungarian</span>
+    </div>
+    <div class="materials-bar">
+        <span class="material-tag wood">Timber (ribbed structure)</span>
+        <span class="material-tag stone">Stone</span><span class="material-tag wood">Wood</span>
+    </div>
+    <div class="card-body">
+        <span class="label">Why it matters</span>
+        <p>Not a house, but Hungary's most important organic architecture reference. Interior is a massive ribbed timber structure evoking a human rib cage. Makovecz (1935–2011), influenced by Wright and Steiner, built with wood and stone in a distinctly Hungarian idiom. 250+ buildings.</p>
+        <span class="label">Renovation takeaway</span>
+        <p>The Hungarian Wright. Proof that modernism needn't abandon craft, nature, or national identity. There is a <em>Hungarian</em> tradition of wood and stone that doesn't need importing.</p>
+    </div>
+</div>
+
+<div class="house-card hungarian">
+    <div class="card-header"><div><h4>27. Wooden House, Algyő</h4><span class="formal-name">Varsányi · Pozsár · Vas</span></div></div>
+    <div class="card-meta">
+        <span><span class="icon">📍</span> Algyő, Hungary</span><span><span class="icon">📅</span> 2016</span>
+        <span><span class="icon">🇭🇺</span> Hungarian</span>
+    </div>
+    <div class="materials-bar">
+        <span class="material-tag wood">Timber frame</span><span class="material-tag wood">Wood cladding</span>
+        <span class="material-tag stone">Stone</span><span class="material-tag glass">Glass</span>
+    </div>
+    <div class="card-body">
+        <span class="label">Why it matters</span>
+        <p>Contemporary Hungarian farmhouse reinterpreting the tanya (farmstead). Central courtyard connecting living spaces, workshop, and garden in the traditional elongated plan.</p>
+        <span class="label">Renovation takeaway</span>
+        <p>The most directly relevant example — contemporary Hungarian architects using local materials and traditions. The courtyard plan is deeply rooted in Hungarian residential architecture.</p>
+    </div>
+</div>
+
+
+<!-- ============================================ -->
+<!-- CHAPTER III: BAUHAUS + NATURAL MATERIALS -->
+<!-- ============================================ -->
+
+<div class="chapter-header bauhaus" id="bauhaus-section">
+    <div class="chapter-num">Chapter III</div>
+    <h2>Bauhaus + Natural Materials</h2>
+    <p>Budapest has 300+ modernist buildings from 1930–1948 — one of Europe's strongest Bauhaus traditions. The challenge: honor that geometric, functional heritage while bringing in the warmth of natural wood and stone. These examples show the way.</p>
+</div>
+
+<div class="house-card bauhaus-card">
+    <div class="card-header"><div><h4>28. Napraforgó Street Houses</h4><span class="formal-name">Budapest's Weissenhof Estate</span></div></div>
+    <div class="card-meta">
+        <span><span class="icon">📍</span> Budapest II. (Pasarét)</span><span><span class="icon">📅</span> 1931</span>
+        <span><span class="icon">🇭🇺</span> 22 houses by 28 architects</span>
+    </div>
+    <div class="materials-bar">
+        <span class="material-tag concrete">Concrete</span><span class="material-tag concrete">Plaster</span>
+        <span class="material-tag glass">Glass</span><span class="material-tag metal">Steel</span>
+    </div>
+    <div class="card-body">
+        <span class="label bauhaus-label">Why it matters</span>
+        <p>Budapest's own Weissenhof Estate. In 1931, the city commissioned 22 detached houses on a single street, each by different architects, all in Bauhaus/International Style. Flat roofs, ribbon windows, geometric volumes, white plaster. The street survives largely intact — a living museum. <strong>This is the architectural DNA your house carries.</strong></p>
+        <span class="label bauhaus-label">Renovation takeaway</span>
+        <p>Study these for the <em>geometry</em> — proportions, window rhythms, flat roof details. Then imagine them with Villa Mairea's interiors: keep the clean lines and volumes, but swap white plaster for textured stone, add wood paneling, replace steel windows with warm timber frames. That's the recipe.</p>
+    </div>
+</div>
+
+<div class="house-card bauhaus-card">
+    <div class="card-header"><div><h4>29. Walter Rózsi Villa</h4><span class="formal-name">József Fischer</span></div></div>
+    <div class="card-meta">
+        <span><span class="icon">📍</span> Budapest XI. district</span><span><span class="icon">📅</span> 1936</span>
+        <span><span class="icon">🇭🇺</span> Hungarian</span>
+    </div>
+    <div class="materials-bar">
+        <span class="material-tag concrete">Concrete</span><span class="material-tag concrete">Plaster</span>
+        <span class="material-tag glass">Grid-patterned glass</span><span class="material-tag wood">Wood</span>
+    </div>
+    <div class="card-body">
+        <span class="label bauhaus-label">Why it matters</span>
+        <p>One of Budapest's finest modernist houses, now housing the Hungarian Museum of Architecture's first permanent exhibition on modern residential houses. Crisp white volumes, grid glass walls, stepped massing. Restored after decades of neglect.</p>
+        <span class="label bauhaus-label">Renovation takeaway</span>
+        <p>Visit this to understand the baseline — what Budapest Bauhaus looks like at its best. Note how even in the original, wood floors and terrazzo brought warmth to white walls. The museum is essential pre-renovation research.</p>
+    </div>
+</div>
+
+<div class="house-card bauhaus-card">
+    <div class="card-header"><div><h4>30. Sarolta Huttl — Bauhaus Apartment</h4><span class="formal-name">Budapest Bauhaus Villa Renovation</span></div></div>
+    <div class="card-meta">
+        <span><span class="icon">📍</span> Budapest</span><span><span class="icon">📅</span> 2016 renovation</span>
+        <span><span class="icon">🇭🇺</span> Hungarian</span>
+    </div>
+    <div class="materials-bar">
+        <span class="material-tag wood">Oak flooring</span><span class="material-tag concrete">Concrete tiles</span>
+        <span class="material-tag wood">Valchromat panels</span>
+    </div>
+    <div class="card-body">
+        <span class="label bauhaus-label">Why it matters</span>
+        <p><strong>The most directly relevant example for your renovation.</strong> Huttl took a 1930s Bauhaus villa apartment in Budapest and renovated with contemporary materials while preserving the original structure. She kept geometric volumes and high ceilings, restored original plaster details, then layered in warm oak flooring and bold color accents (teal cabinetry, white tile).</p>
+        <span class="label bauhaus-label">Renovation takeaway</span>
+        <p>The closest precedent to what you're planning. Keep Bauhaus proportions intact while warming the interior with oak and natural materials. Her color strategy — teal and white against warm wood — makes Bauhaus spaces feel inhabited, not clinical.</p>
+    </div>
+</div>
+
+<div class="house-card bauhaus-card">
+    <div class="card-header"><div><h4>31. B-Architecten — 1930s Belgian House</h4></div></div>
+    <div class="card-meta">
+        <span><span class="icon">📍</span> Belgium</span><span><span class="icon">📅</span> ~2020 renovation</span>
+    </div>
+    <div class="materials-bar">
+        <span class="material-tag stone">Travertine flooring</span><span class="material-tag metal">Original steel frames</span>
+        <span class="material-tag wood">Bespoke furnishings</span>
+    </div>
+    <div class="card-body">
+        <span class="label bauhaus-label">Why it matters</span>
+        <p>A 1930s modernist house renovated by keeping original details (curved staircase, steel window frames) while adding travertine floors, skylit bathroom, and mid-century furniture. The travertine adds warmth and texture while respecting geometric language.</p>
+        <span class="label bauhaus-label">Renovation takeaway</span>
+        <p>Travertine is the bridge material — natural stone, warm to the touch, but flat and precise enough for Bauhaus geometry. Hungarian travertine from the Bükk Mountains would be historically and materially perfect. This is how travertine unifies rooms designed in the white-and-terrazzo tradition.</p>
+    </div>
+</div>
+
+<div class="house-card bauhaus-card">
+    <div class="card-header"><div><h4>32. Villa Rezek</h4><span class="formal-name">Hans Glas (restored Maximilian Eisenköck)</span></div></div>
+    <div class="card-meta">
+        <span><span class="icon">📍</span> Vienna, Austria</span><span><span class="icon">📅</span> 1933 (restored 2022)</span>
+    </div>
+    <div class="materials-bar">
+        <span class="material-tag concrete">Original 1930s structure</span><span class="material-tag glass">Glass</span>
+        <span class="material-tag wood">Period materials</span>
+    </div>
+    <div class="card-body">
+        <span class="label bauhaus-label">Why it matters</span>
+        <p>A Central European Bauhaus contemporary — built just 200 km from Budapest, in the same cultural milieu. The 2022 restoration preserved original design intent: clean geometric volumes, large windows, functional layout. Now a museum showing how 1930s Viennese modernism lived.</p>
+        <span class="label bauhaus-label">Renovation takeaway</span>
+        <p>The closest cultural analog to a Budapest Bauhaus house. Vienna and Budapest shared architects, ideas, and material suppliers in the 1930s. Study restored details — window profiles, floor materials, wall treatments — for period-appropriate inspiration, then warm with contemporary wood and stone.</p>
+    </div>
+</div>
+
+
+<!-- ============================================ -->
+<!-- DESIGN PRINCIPLES -->
+<!-- ============================================ -->
+
+<div class="principles" id="principles">
+    <h2>Design Principles Distilled</h2>
+    <p style="text-align:center;opacity:0.7;margin-bottom:32px;font-size:0.9rem;">Common threads across all 32 houses — plus one new rule for Bauhaus renovation</p>
+    <div class="principles-grid">
+        <div class="principle-card">
+            <div class="num">01</div>
+            <h3>Local Materials First</h3>
+            <p>Wright used Pennsylvania sandstone. Breuer used Connecticut fieldstone. Zumthor used Swiss larch. The best material is the one already in the landscape.</p>
+        </div>
+        <div class="principle-card">
+            <div class="num">02</div>
+            <h3>One Hero Per Space</h3>
+            <p>A stone fireplace wall, a wood-paneled ceiling, a concrete floor. Each room gets one material hero — everything else supports it.</p>
+        </div>
+        <div class="principle-card">
+            <div class="num">03</div>
+            <h3>Let Materials Age</h3>
+            <p>Redwood turns silver. Oak darkens. Copper goes green. Design for aging, don't fight it.</p>
+        </div>
+        <div class="principle-card">
+            <div class="num">04</div>
+            <h3>Built-In Furniture</h3>
+            <p>Wright, Breuer, Aalto — all designed furniture as architecture. Saves space, creates coherence.</p>
+        </div>
+        <div class="principle-card">
+            <div class="num">05</div>
+            <h3>Blur Inside &amp; Outside</h3>
+            <p>Stone wall from garden to living room. Floor continuing onto terrace. Window framing a specific tree.</p>
+        </div>
+        <div class="principle-card">
+            <div class="num">06</div>
+            <h3>Honest Structure</h3>
+            <p>Exposed stone, visible timber beams, raw concrete. The structure <em>is</em> the decoration.</p>
+        </div>
+        <div class="principle-card">
+            <div class="num">07</div>
+            <h3>Light Is a Material</h3>
+            <p>Ando's slits, Wright's clerestories, Aalto's skylights. Control, direct, celebrate natural light.</p>
+        </div>
+        <div class="principle-card">
+            <div class="num">08</div>
+            <h3>Warmth Over Coolness</h3>
+            <p>Wood, stone, textiles, fire. Organic modernism, not white-box minimalism.</p>
+        </div>
+        <div class="principle-card" style="border-color: rgba(193,59,42,0.4);">
+            <div class="num" style="color: #E0A090;">09</div>
+            <h3>Respect the Bauhaus Bones</h3>
+            <p>Keep the geometry, proportions, clean lines. Add warmth through <em>material</em>, not ornament. The Bauhaus gave you great form — now give it great texture.</p>
+        </div>
+    </div>
+</div>
+
+<!-- ============================================ -->
+<!-- MATERIALS -->
+<!-- ============================================ -->
+
+<div class="materials-section" id="materials">
+    <h2>Materials Guide for Budapest</h2>
+    <p style="text-align:center;color:var(--text-muted);margin-bottom:32px;font-size:0.93rem;">Stone and wood species to consider — especially for a house with Bauhaus heritage</p>
+
+    <h3 style="color:var(--stone);margin-bottom:14px;font-weight:400;font-size:1.2rem;">🪨 Stone</h3>
+    <div class="materials-grid" style="margin-bottom:36px;">
+        <div class="material-card">
+            <h4>Süttői Limestone</h4>
+            <p>Warm cream/gold, soft texture</p>
+            <p style="font-size:0.82rem;">Gerecse Mountains (~60 km)</p>
+            <span class="use">Flooring · wall cladding · fireplaces</span>
+        </div>
+        <div class="material-card" style="border-color:var(--bauhaus-red); border-width:2px;">
+            <h4>Hungarian Travertine ★</h4>
+            <p>Warm beige, pitted surface — <strong>the Bauhaus bridge material</strong></p>
+            <p style="font-size:0.82rem;">Bükk Mountains</p>
+            <span class="use">Bathrooms · flooring · exterior — precise enough for Bauhaus geometry</span>
+        </div>
+        <div class="material-card">
+            <h4>Buda Dolomite</h4>
+            <p>Grey-white, crystalline</p>
+            <p style="font-size:0.82rem;">Local Buda Hills quarries</p>
+            <span class="use">Exterior walls · garden walls</span>
+        </div>
+        <div class="material-card">
+            <h4>Danube River Stone</h4>
+            <p>Rounded, grey/brown, varied</p>
+            <p style="font-size:0.82rem;">Danube riverbed</p>
+            <span class="use">Garden paths · feature walls</span>
+        </div>
+        <div class="material-card">
+            <h4>Pilis Sandstone</h4>
+            <p>Red-brown, layered texture</p>
+            <p style="font-size:0.82rem;">Pilis Mountains</p>
+            <span class="use">Accent walls · fireplace surrounds</span>
+        </div>
+    </div>
+
+    <h3 style="color:var(--wood);margin-bottom:14px;font-weight:400;font-size:1.2rem;">🪵 Wood</h3>
+    <div class="materials-grid">
+        <div class="material-card" style="border-color:var(--wood-warm); border-width:2px;">
+            <h4>Hungarian Oak ★</h4>
+            <p class="latin">Quercus petraea</p>
+            <p>Tight grain, honey-gold — <strong>the primary species</strong></p>
+            <p style="font-size:0.82rem;">Zala, Baranya, Mecsek</p>
+            <span class="use">Herringbone flooring · paneling · built-ins</span>
+        </div>
+        <div class="material-card">
+            <h4>European Walnut</h4>
+            <p class="latin">Juglans regia</p>
+            <p>Rich brown, dramatic grain — <strong>the accent species</strong></p>
+            <p style="font-size:0.82rem;">Transdanubia</p>
+            <span class="use">Feature furniture · countertops · accent panels</span>
+        </div>
+        <div class="material-card">
+            <h4>European Beech</h4>
+            <p class="latin">Fagus sylvatica</p>
+            <p>Pale, fine-grained, hard</p>
+            <p style="font-size:0.82rem;">Northern Hungary (Bükk)</p>
+            <span class="use">Furniture · shelving · door frames</span>
+        </div>
+        <div class="material-card">
+            <h4>European Larch</h4>
+            <p class="latin">Larix decidua</p>
+            <p>Golden-brown, naturally rot-resistant</p>
+            <p style="font-size:0.82rem;">Alps, Carpathians</p>
+            <span class="use">Exterior cladding · decking · window frames</span>
+        </div>
+        <div class="material-card">
+            <h4>Scots Pine</h4>
+            <p class="latin">Pinus sylvestris</p>
+            <p>Warm yellow, knotty, affordable</p>
+            <p style="font-size:0.82rem;">Northern Hungary</p>
+            <span class="use">Ceiling boards · sauna · structural beams</span>
+        </div>
+        <div class="material-card">
+            <h4>European Ash</h4>
+            <p class="latin">Fraxinus excelsior</p>
+            <p>Light, elastic, strong grain</p>
+            <p style="font-size:0.82rem;">Throughout Hungary</p>
+            <span class="use">Flooring · stair treads · handrails</span>
+        </div>
+    </div>
+</div>
+
+<!-- HOW TO USE -->
+<div class="how-to-use">
+    <h2>How to Use This Collection</h2>
+    <ol>
+        <li><strong>Pick your stone.</strong> Visit a Hungarian quarry. Hungarian travertine bridges Bauhaus precision and mid-century warmth — it's the material where both traditions meet.</li>
+        <li><strong>Pick your wood.</strong> One primary species (Hungarian oak) and one accent (walnut). Your existing herringbone flooring instincts are right — extend that language.</li>
+        <li><strong>Identify 2-3 houses per chapter</strong> that resonate. Print specific details — a fireplace, a window, a ceiling treatment — not whole rooms.</li>
+        <li><strong>Show these to your architect.</strong> "I want the stone from Fallingwater, the wood ceiling from Villa Mairea, the Bauhaus proportions from Napraforgó Street, and Pawson's approach to renovating an old building."</li>
+        <li><strong>Visit what's in Budapest.</strong> Napraforgó Street, Walter Rózsi Villa, Farkasrét Chapel — all essential pre-renovation walks.</li>
+        <li><strong>Study Breuer obsessively.</strong> Born in Pécs, trained at the Bauhaus, built the best stone-and-wood houses in America. He <em>is</em> the fusion of everything you want.</li>
+    </ol>
+</div>
+
+<div class="footer">
+    <p>Curated for the Budapest house renovation · May 2026</p>
+    <p style="margin-top:8px;font-size:0.8rem;opacity:0.6;">32 houses · 3 chapters · 18 architects · 1922–2023</p>
+    <p style="margin-top:4px;font-size:0.75rem;opacity:0.4;">Classic Mid-Century · Contemporary DNA · Bauhaus + Natural Materials</p>
+</div>
+
+</div>
+
+</body>
+</html>
